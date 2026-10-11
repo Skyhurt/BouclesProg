@@ -29,7 +29,15 @@ class Program
         Console.WriteLine("Bonne année !");
 
         // Etape 3 : faire un compteur qui va de -4 à 2
-        
+
+        counter = -5;
+        for (int i = -4; i <= 2; i++)
+        {
+            counter++;
+            Console.WriteLine(counter);
+        }
+        Console.WriteLine("Le compteur est à " + counter);
+
         // Etape 4 : faire un compteur qui compte 2 par 2 de 0 à 15
         
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
