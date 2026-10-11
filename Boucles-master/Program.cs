@@ -15,9 +15,18 @@ class Program
             counter++;
             Console.WriteLine(counter);
         }
-        
         Console.WriteLine("Le compteur est arrivé à " + counter);
+        
+        //Etape 1b avec while
 
+        counter = 0;
+        while (counter < 10)
+            {
+                counter++;
+                Console.WriteLine(counter);
+            }
+        Console.WriteLine("Le compteur est arrivé à " + counter);
+        
         // Etape 2 : faire un décompte qui va de 5 à 1 puis qui dit "Bonne année !"
 
         counter = 6;
@@ -54,8 +63,13 @@ class Program
         Console.WriteLine("Le compteur est à " + counter);
 
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
-        string yes = "Oui";
-
+        counter = 0;
+        string response = "oui";
+        do
+        {
+            Console.WriteLine("Continuer ? (oui) ");
+            response = Console.ReadLine();
+        } while (response != "oui");
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
